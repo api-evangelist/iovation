@@ -1,0 +1,30 @@
+generated: '2026-07-19'
+method: searched
+source: https://github.com/iovation
+note: >-
+  iovation is now TransUnion TruValidate Device Risk (the SDK was formerly named
+  FraudForce). The first-party mobile SDKs are distributed as prebuilt binary
+  artifacts (xcframework / aar) via the iovation GitHub organization rather than
+  through a public package registry (npm/Maven Central/CocoaPods). No first-party
+  server-side client library is published publicly; server integration is a SOAP
+  (CheckTransactionDetails) call.
+packages:
+  - language: swift-objc
+    platform: ios
+    registry: github
+    name: FraudForce.xcframework
+    version: 5.8.0
+    url: https://github.com/iovation/deviceprint-SDK-iOS
+    install: >-
+      Download the release from GitHub, drag FraudForce.xcframework into the
+      Xcode project, and add it to Frameworks, Libraries, and Embedded Content.
+    official: true
+  - language: java
+    platform: android
+    registry: github
+    name: com.iovation.mobile.android.FraudForce
+    artifact: fraudforce-lib-release-5.3.0.aar
+    version: 5.3.0
+    url: https://github.com/iovation/deviceprint-SDK-Android
+    install: "implementation(name:'fraudforce-lib-release-5.3.0', ext:'aar')"
+    official: true

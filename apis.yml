@@ -1,8 +1,27 @@
 aid: iovation
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/iovation.png
 name: iovation
-description: 'iovation is a company surfaced as a portfolio company of sapphire-ventures and added to
-  the API Evangelist network as a stub for enrichment. Sector: security. This profile is a lead awaiting
-  the enrichment pipeline.'
+description: >-
+  iovation is a device-intelligence and online fraud-prevention service acquired
+  by TransUnion in 2018 and now delivered as TransUnion TruValidate Device Risk
+  (the SDK was formerly branded "FraudForce"). It fingerprints web and mobile
+  devices into an encrypted "blackbox," evaluates it against a shared reputation
+  database of billions of devices plus configurable rulesets, and returns a
+  transaction risk assessment. Device data is collected client-side with
+  first-party JavaScript and native iOS/Android SDKs; server-side integration is
+  a SOAP CheckTransactionDetails call over HTTPS. iovation is used for account
+  takeover, new-account fraud, payment fraud, and bot detection.
 url: https://raw.githubusercontent.com/api-evangelist/iovation/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -12,10 +31,18 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-19'
 tags:
 - Company
 - Security
+- Fraud Prevention
+- Device Intelligence
+- Device Fingerprinting
+- Identity
+- Risk Scoring
+- Anti-Fraud
+- Authentication
+- TransUnion
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -25,3 +52,22 @@ maintainers:
 common:
 - type: Website
   url: https://www.iovation.com/
+- type: DeveloperPortal
+  url: https://github.com/iovation
+- type: Documentation
+  url: https://github.com/iovation/deviceprint-SDK-iOS/blob/master/README.md
+- type: GitHubOrganization
+  url: https://github.com/iovation
+- type: Packages
+  url: packages/iovation-packages.yml
+- type: SDKs
+  url: packages/iovation-packages.yml
+- type: DomainSecurity
+  url: security/iovation-domain-security.yml
+- type: LLMsTxt
+  url: llms/iovation-llms.txt
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence

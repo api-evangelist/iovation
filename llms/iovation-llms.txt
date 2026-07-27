@@ -1,0 +1,22 @@
+# iovation (TransUnion TruValidate Device Risk)
+
+> iovation is a device-intelligence and online fraud-prevention service, acquired by TransUnion in 2018 and now offered as part of the TransUnion TruValidate fraud suite (Device Risk, formerly branded "FraudForce"). It fingerprints web and mobile devices into an encrypted "blackbox," draws on a shared reputation database of billions of devices, and returns a risk assessment for a transaction. Server-side integration is a SOAP call (CheckTransactionDetails); device data is collected client-side via first-party JavaScript and native mobile SDKs.
+
+## APIs
+
+- [Device Risk / CheckTransactionDetails](https://www.iovation.com/): Legacy XML SOAP-over-HTTPS transaction risk-check API that scores a device blackbox plus transaction details against configurable rulesets. (No public OpenAPI is published.)
+
+## SDKs
+
+- [Device Risk SDK for iOS (FraudForce.xcframework 5.8.0)](https://github.com/iovation/deviceprint-SDK-iOS): Native iOS SDK that generates the device blackbox; manual xcframework install, iOS 15+.
+- [Device Risk SDK for Android (com.iovation.mobile.android.FraudForce 5.3.0)](https://github.com/iovation/deviceprint-SDK-Android): Native Android SDK (aar), Java 11 / Android SDK 24+.
+
+## Docs
+
+- [iovation GitHub organization](https://github.com/iovation): First-party SDK repositories, sample apps, and public certificate rotation material (TransUnion Global Fraud Solutions).
+- [TruValidate solution page](https://www.transunion.com/solution/truvalidate): TransUnion product overview for the fraud/identity suite that Device Risk is part of.
+
+## Artifacts
+
+- [Packages / SDKs](https://raw.githubusercontent.com/api-evangelist/iovation/refs/heads/main/packages/iovation-packages.yml)
+- [Domain security probe](https://raw.githubusercontent.com/api-evangelist/iovation/refs/heads/main/security/iovation-domain-security.yml)
